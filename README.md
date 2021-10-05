@@ -99,9 +99,9 @@ The readings from ___70%___ of the volunteers were taken as ___trianing data___ 
          - [subject_train](UCI_HAR_Dataset/train/subject_train.txt)
          - [Y_train](UCI_HAR_Dataset/train/y_train.txt)
      - ___Test Data___
-         - [X_test](UCI_HAR_dataset/test/X_test.txt)
-         - [subject_test](UCI_HAR_dataset/test/subject_test.txt)
-         - [Y_test](UCI_HAR_dataset/test/y_test.txt)
+         - [X_test](UCI_HAR_Dataset/test/X_test.txt)
+         - [subject_test](UCI_HAR_Dataset/test/subject_test.txt)
+         - [Y_test](UCI_HAR_Dataset/test/y_test.txt)
 
 ## Quick Overview of the Dataset
 
