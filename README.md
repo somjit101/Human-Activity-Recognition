@@ -15,7 +15,7 @@ By using the sensors(Gyroscope and accelerometer) in a smartphone, they have cap
 
 > **suffix 'XYZ' represents 3-axial signals in X , Y, and Z directions.**
 
-### Feature Names
+## **Feature Names**
 
 1. These sensor signals are preprocessed by applying noise filters and then sampled in fixed-width windows(sliding windows) of 2.56 seconds each with 50% overlap. ie., each window has 128 readings. 
 
@@ -68,11 +68,70 @@ By using the sensors(Gyroscope and accelerometer) in a smartphone, they have cap
 	+ ___bandsEnergy()___: Energy of a frequency interval within the 64 bins of the FFT of each window.
 	+ ___angle()___: Angle between to vectors.
 
-9. We can obtain some other vectors by taking the average of signals in a single window sample. These are used on the angle() variable'
-`
+9. We can obtain some other vectors by taking the **average of signals** in a single window sample. These are used on the 'angle() variable'
 	+ gravityMean
 	+ tBodyAccMean
 	+ tBodyAccJerkMean
 	+ tBodyGyroMean
 	+ tBodyGyroJerkMean
 
+## **Output Labels**
+
++ In the dataset, Y_labels are represented as numbers from 1 to 6 as their identifiers.
+
+	- WALKING as __1__
+	- WALKING_UPSTAIRS as __2__
+	- WALKING_DOWNSTAIRS as __3__
+	- SITTING as __4__
+	- STANDING as __5__
+	- LAYING as __6__
+
+## Train-Test Split
+
+The readings from ___70%___ of the volunteers were taken as ___trianing data___ and remaining ___30%___ subjects recordings were taken for ___test data___
+
+## Dataset Location
+
+* All the data is present in 'UCI_HAR_dataset/' folder in present working directory.
+     - Feature names are present in 'UCI_HAR_dataset/features.txt'
+     - ___Train Data___
+         - [X_train](UCI_HAR_dataset/train/X_train.txt)
+         - [subject_train](UCI_HAR_dataset/train/subject_train.txt)
+         - [Y_train](UCI_HAR_dataset/train/y_train.txt)
+     - ___Test Data___
+         - [X_test](UCI_HAR_dataset/test/X_test.txt)
+         - [subject_test](UCI_HAR_dataset/test/subject_test.txt)
+         - [Y_test](UCI_HAR_dataset/test/y_test.txt)
+
+## Quick Overview of the Dataset
+
+* Accelerometer and Gyroscope readings are taken from 30 volunteers(referred as subjects) while performing the following 6 Activities.
+
+    1. Walking     
+    2. WalkingUpstairs 
+    3. WalkingDownstairs 
+    4. Standing 
+    5. Sitting 
+    6. Lying.
+
+
+* Readings are divided into a window of 2.56 seconds with 50% overlapping. 
+
+* Accelerometer readings are divided into gravity acceleration and body acceleration readings,
+  which has x,y and z components each.
+
+* Gyroscope readings are the measure of angular velocities which has x,y and z components.
+
+* Jerk signals are calculated for BodyAcceleration readings.
+
+* Fourier Transforms are made on the above time readings to obtain frequency readings.
+
+* Now, on all the base signal readings., mean, max, mad, sma, arcoefficient, engerybands,entropy etc., are calculated for each window.
+
+* We get a feature vector of 561 features and these features are given in the dataset.
+
+* Each window of readings is a datapoint of 561 features.
+
+## Problem Statement
+
+Given a new datapoint with all the sensor readings, we have to **predict the current Human Activity**.
