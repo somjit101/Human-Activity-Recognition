@@ -95,9 +95,9 @@ The readings from ___70%___ of the volunteers were taken as ___trianing data___ 
 * All the data is present in 'UCI_HAR_dataset/' folder in present working directory.
      - Feature names are present in 'UCI_HAR_dataset/features.txt'
      - ___Train Data___
-         - [X_train](UCI_HAR_dataset/train/X_train.txt)
-         - [subject_train](UCI_HAR_dataset/train/subject_train.txt)
-         - [Y_train](UCI_HAR_dataset/train/y_train.txt)
+         - [X_train](UCI_HAR_Dataset/train/x_train.txt)
+         - [subject_train](UCI_HAR_Dataset/train/subject_train.txt)
+         - [Y_train](UCI_HAR_Dataset/train/y_train.txt)
      - ___Test Data___
          - [X_test](UCI_HAR_dataset/test/X_test.txt)
          - [subject_test](UCI_HAR_dataset/test/subject_test.txt)
