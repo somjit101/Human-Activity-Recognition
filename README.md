@@ -88,7 +88,7 @@ By using the sensors(Gyroscope and accelerometer) in a smartphone, they have cap
 
 ## Train-Test Split
 
-The readings from ___70%___ of the volunteers were taken as ___trianing data___ and remaining ___30%___ subjects recordings were taken for ___test data___
+The readings from ___70%___ of the volunteers were taken as ___training data___ and remaining ___30%___ subjects recordings were taken for ___test data___
 
 ## Dataset Location
 
