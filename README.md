@@ -21,7 +21,7 @@ By using the sensors(Gyroscope and accelerometer) in a smartphone, they have cap
 
 2. From Each window, a feature vector was obtianed by calculating variables from the time and frequency domain.
 > In our dataset, each datapoint represents a window with different readings 
-3. The accelertion signal was saperated into Body and Gravity acceleration signals(___tBodyAcc-XYZ___ and ___tGravityAcc-XYZ___) using some low pass filter with corner frequecy of 0.3Hz.
+3. The accelertion signal was separated into Body and Gravity acceleration signals(___tBodyAcc-XYZ___ and ___tGravityAcc-XYZ___) using some low pass filter with corner frequecy of 0.3Hz.
 
 4. After that, the body linear acceleration and angular velocity were derived in time to obtian _jerk signals_ (___tBodyAccJerk-XYZ___ and ___tBodyGyroJerk-XYZ___). 
 
